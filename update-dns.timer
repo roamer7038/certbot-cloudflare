@@ -1,0 +1,12 @@
+[Unit]
+Description=Timer for updating DNS record using Cloudflare API
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1h
+Unit=update-dns.service
+
+[Install]
+WantedBy=multi-user.target
+
+# /etc/systemd/system/update-dns.timer

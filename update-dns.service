@@ -1,0 +1,9 @@
+[Unit]
+Description=Update DNS record using Cloudflare API
+
+[Service]
+Type=oneshot
+ExecStart=/path/to/update-dns.sh
+WorkingDirectory=/path/to/directory
+
+# path: /etc/systemd/system/update-dns.service
